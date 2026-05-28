@@ -45,14 +45,14 @@ export default function ProductActions({ product, variants }: { product: Product
       {/* SELECTOR DE TALLES */}
       <section>
         <h4 className="text-[10px] uppercase tracking-[0.5em] text-zinc-400 font-black mb-6 italic">Seleccionar Talle</h4>
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-4 gap-2 sm:gap-3">
           {variants && variants.length > 0 ? (
             variants.map((v) => (
               <button 
                 key={v.id}
                 onClick={() => v.stock > 0 && setSelectedSize(v.size)}
                 disabled={v.stock === 0}
-                className={`h-16 border flex flex-col items-center justify-center transition-all duration-300 rounded-sm ${
+                className={`min-h-16 py-3 px-1 border flex flex-col items-center justify-center transition-all duration-300 rounded-sm ${
                   v.stock === 0 
                     ? 'border-zinc-100 bg-zinc-50 text-zinc-300 cursor-not-allowed opacity-40 line-through' 
                     : selectedSize === v.size
@@ -60,9 +60,9 @@ export default function ProductActions({ product, variants }: { product: Product
                     : 'border-black/10 text-black hover:border-black hover:bg-zinc-50'
                 }`}
               >
-                <span className="text-lg font-black italic uppercase">{v.size}</span>
+                <span className="text-lg font-black italic uppercase leading-none">{v.size}</span>
                 {v.stock <= 3 && v.stock > 0 && (
-                  <span className={`text-[9px] font-black tracking-tight uppercase mt-0.5 ${selectedSize === v.size ? 'text-white' : 'text-red-600 animate-pulse'}`}>
+                  <span className={`text-[8px] sm:text-[9px] font-black tracking-tight uppercase mt-1 leading-none ${selectedSize === v.size ? 'text-white' : 'text-red-600 animate-pulse'}`}>
                     Últimas {v.stock}
                   </span>
                 )}

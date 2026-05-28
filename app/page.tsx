@@ -70,7 +70,7 @@ export default async function Home() {
             <span className="text-[9px] uppercase tracking-[1.2em] font-black text-black bg-white/90 backdrop-blur-sm px-5 py-2.5 inline-block rounded-sm shadow-md animate-pulse mb-3">
               Lanzamiento 01 // Colección 2026
             </span>
-            <h1 className="text-8xl md:text-[12rem] font-black italic tracking-tighter uppercase leading-[0.8] text-black drop-shadow-[0_4px_20px_rgba(255,255,255,0.85)]">
+            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[12rem] font-black italic tracking-tighter uppercase leading-[0.8] text-black drop-shadow-[0_4px_20px_rgba(255,255,255,0.85)]">
               SIRIUS<br/>
               <span className="text-transparent" style={{ WebkitTextStroke: '2.5px black', textShadow: '0 0 30px rgba(255,255,255,0.9)' }}>
                 STUDIO

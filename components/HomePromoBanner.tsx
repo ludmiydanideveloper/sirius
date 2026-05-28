@@ -28,7 +28,7 @@ export default function HomePromoBanner() {
               Campaña Especial // Sirius Studio
             </span>
             
-            <h2 className="text-5xl md:text-7.5xl tracking-tighter uppercase leading-[0.8] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)] md:drop-shadow-none">
+            <h2 className="text-4xl sm:text-5xl md:text-7.5xl tracking-tighter uppercase leading-[0.8] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)] md:drop-shadow-none">
               IMBATIBLES
             </h2>
             
@@ -36,7 +36,7 @@ export default function HomePromoBanner() {
               Desde
             </p>
             
-            <p className="text-6xl md:text-[6.5rem] font-mono leading-none tracking-tighter text-white drop-shadow-[0_4px_15px_rgba(0,0,0,0.2)] md:drop-shadow-none mt-1">
+            <p className="text-5xl sm:text-6xl md:text-[6.5rem] font-mono leading-none tracking-tighter text-white drop-shadow-[0_4px_15px_rgba(0,0,0,0.2)] md:drop-shadow-none mt-1">
               $25.990
             </p>
             
